@@ -1,0 +1,42 @@
+# Bennyz Realty - robots.txt
+# Allow all search engines and AI crawlers
+
+User-agent: *
+Allow: /
+
+# AI Crawlers - Explicitly Allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Sitemap
+Sitemap: https://www.bennyzrealty.com/sitemap.xml
