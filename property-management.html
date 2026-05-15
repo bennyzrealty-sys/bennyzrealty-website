@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Property Management — Bennyz Realty | Watching Over Your Kerala Home</title>
+<meta name="description" content="Premium property management for NRI homeowners in Kottayam, Kerala. Weekly site visits, monthly WhatsApp video reports, complete peace of mind — while you're abroad.">
+<meta property="og:title" content="Your Kerala home, watched over. — Bennyz Realty Property Management">
+<meta property="og:description" content="For NRIs with ancestral homes in Kottayam. Real visits. Real photos. Real video. Sent to your WhatsApp.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #0B0D0C;
+  --bg-2: #111413;
+  --bg-3: #1A1E1C;
+  --ink: #F4EFE3;
+  --ink-dim: #A8A199;
+  --ink-faint: #6B6660;
+  --brass: #C9A961;
+  --brass-deep: #8A6F37;
+  --whatsapp: #25D366;
+  --whatsapp-dark: #128C7E;
+  --line: rgba(244, 239, 227, 0.08);
+  --line-strong: rgba(244, 239, 227, 0.16);
+  --font-display: 'Fraunces', 'Times New Roman', serif;
+  --font-body: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Subtle film grain */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.container { max-width: 1240px; margin: 0 auto; padding: 0 2rem; }
+
+@media (max-width: 640px) {
+  .container { padding: 0 1.25rem; }
+}
+
+/* ========== NAV ========== */
+nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  padding: 1.25rem 0;
+  z-index: 50;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(11, 13, 12, 0.7);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.logo span { color: var(--brass); font-style: italic; }
+
+.nav-cta {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.65rem 1.2rem;
+  background: var(--whatsapp);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.nav-cta:hover { background: var(--whatsapp-dark); transform: translateY(-1px); }
+
+@media (max-width: 640px) {
+  .nav-cta span { display: none; }
+  .nav-cta { padding: 0.55rem 0.9rem; }
+}
+
+/* ========== HERO ========== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 8rem 0 4rem;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 80% 20%, rgba(201, 169, 97, 0.12), transparent 50%),
+    radial-gradient(ellipse at 20% 80%, rgba(37, 211, 102, 0.04), transparent 50%);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 920px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brass);
+  margin-bottom: 2rem;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 28px; height: 1px;
+  background: var(--brass);
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(2.5rem, 7vw, 5.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  margin-bottom: 1.75rem;
+}
+
+h1 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--brass);
+  font-variation-settings: "SOFT" 100;
+}
+
+.hero-sub {
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+  color: var(--ink-dim);
+  max-width: 620px;
+  margin-bottom: 2.5rem;
+  line-height: 1.55;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  padding: 1rem 1.75rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--whatsapp);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--whatsapp-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px -10px rgba(37, 211, 102, 0.5);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line-strong);
+}
+
+.btn-ghost:hover { border-color: var(--brass); color: var(--brass); }
+
+.hero-meta {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+
+.hero-meta-item .num {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: var(--brass);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.hero-meta-item .lbl {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-top: 0.5rem;
+}
+
+/* ========== SECTION SHARED ========== */
+section { padding: 7rem 0; position: relative; }
+
+@media (max-width: 640px) { section { padding: 4.5rem 0; } }
+
+.section-label {
+  display: inline-flex; align-items: center; gap: 0.75rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brass);
+  margin-bottom: 1.5rem;
+}
+
+.section-label::before {
+  content: ""; width: 28px; height: 1px; background: var(--brass);
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.5rem;
+  max-width: 18ch;
+}
+
+h2 em {
+  font-style: italic;
+  color: var(--brass);
+}
+
+.section-intro {
+  font-size: 1.1rem;
+  color: var(--ink-dim);
+  max-width: 60ch;
+  margin-bottom: 4rem;
+  line-height: 1.6;
+}
+
+/* ========== THE PROBLEM ========== */
+.problem {
+  background: var(--bg-2);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .problem-grid { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+.problem-text p {
+  color: var(--ink-dim);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.problem-text p strong { color: var(--ink); font-weight: 500; }
+
+.problem-card {
+  position: relative;
+  padding: 2.5rem;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.35rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.problem-card::before {
+  content: "“";
+  position: absolute;
+  top: -1.5rem; left: 1.5rem;
+  font-family: var(--font-display);
+  font-size: 6rem;
+  color: var(--brass);
+  line-height: 1;
+  font-style: normal;
+}
+
+.problem-card-meta {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* ========== THE WHATSAPP MOCKUP (HERO FEATURE) ========== */
+.mockup-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.mockup-section::before {
+  content: "";
+  position: absolute;
+  top: 10%; right: -20%;
+  width: 70%; height: 80%;
+  background: radial-gradient(circle, rgba(37, 211, 102, 0.08), transparent 60%);
+  z-index: 0;
+}
+
+.mockup-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .mockup-grid { grid-template-columns: 1fr; gap: 3.5rem; }
+}
+
+.mockup-text h2 { max-width: none; }
+
+.mockup-text .lead {
+  font-size: 1.15rem;
+  color: var(--ink-dim);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.mockup-features {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.mockup-features li {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.98rem;
+  color: var(--ink);
+}
+
+.mockup-features li::before {
+  content: "→";
+  color: var(--brass);
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+/* Phone mockup */
+.phone {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 9 / 19;
+  background: #000;
+  border-radius: 44px;
+  padding: 14px;
+  position: relative;
+  box-shadow:
+    0 50px 100px -20px rgba(0, 0, 0, 0.5),
+    0 30px 60px -30px rgba(201, 169, 97, 0.2),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.phone::before {
+  content: "";
+  position: absolute;
+  top: 22px; left: 50%;
+  transform: translateX(-50%);
+  width: 90px; height: 24px;
+  background: #000;
+  border-radius: 999px;
+  z-index: 2;
+}
+
+.phone-screen {
+  width: 100%; height: 100%;
+  background: #0B141A;
+  border-radius: 32px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.wa-header {
+  background: #1F2C34;
+  padding: 3rem 1rem 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.wa-avatar {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--brass), var(--brass-deep));
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: #fff;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.wa-name {
+  font-size: 0.88rem;
+  color: #E9EDEF;
+  font-weight: 500;
+}
+
+.wa-status {
+  font-size: 0.7rem;
+  color: #8696A0;
+  margin-top: 1px;
+}
+
+.wa-body {
+  flex: 1;
+  background:
+    radial-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    #0B141A;
+  background-size: 20px 20px;
+  padding: 1rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+
+.wa-bubble {
+  background: #202C33;
+  border-radius: 8px;
+  padding: 0.5rem 0.6rem;
+  max-width: 85%;
+  position: relative;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.13);
+}
+
+.wa-bubble-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  margin-bottom: 0.4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.wa-bubble-img.house {
+  background:
+    linear-gradient(135deg, rgba(0,0,0,0.3), transparent 50%),
+    linear-gradient(180deg, #3E5266 0%, #2E4053 50%, #1A4D2E 100%);
+}
+
+.wa-bubble-img.house::after {
+  content: "🏡";
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+}
+
+.wa-bubble-img.video {
+  background:
+    linear-gradient(135deg, rgba(0,0,0,0.4), transparent 50%),
+    linear-gradient(180deg, #4A5C4E, #2A3D2E);
+}
+
+.wa-bubble-img.video::after {
+  content: "▶";
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3px;
+}
+
+.wa-bubble-text {
+  color: #E9EDEF;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.wa-bubble-meta {
+  color: #8696A0;
+  font-size: 0.6rem;
+  text-align: right;
+  margin-top: 0.25rem;
+}
+
+.wa-bubble-meta::after { content: " ✓✓"; color: #53BDEB; }
+
+/* ========== SERVICES ========== */
+.services {
+  background: var(--bg-2);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 700px) {
+  .services-grid { grid-template-columns: 1fr; }
+}
+
+.service-cell {
+  padding: 2.5rem;
+  background: var(--bg-2);
+  transition: background 0.3s ease;
+  position: relative;
+}
+
+.service-cell:hover { background: var(--bg-3); }
+
+.service-num {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--brass);
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.05em;
+}
+
+.service-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.01em;
+}
+
+.service-desc {
+  color: var(--ink-dim);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ========== PLANS ========== */
+.plans {
+  position: relative;
+}
+
+.plans-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.plans-header h2 {
+  margin-left: auto; margin-right: auto;
+  max-width: 22ch;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .plans-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+}
+
+.plan-price {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.plan-price-rate {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--ink);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.plan.featured .plan-price-rate { color: var(--brass); }
+
+.plan-price-unit {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.02em;
+}
+
+.plan-price-min {
+  margin-top: 0.75rem;
+  font-size: 0.82rem;
+  color: var(--ink-dim);
+  letter-spacing: 0.02em;
+}
+
+.commitment {
+  margin-top: 5rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--line);
+}
+
+.commitment-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.commitment-header h3 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.commitment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .commitment-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+
+.commitment-item {
+  padding: 1.75rem;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.commitment-label {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--brass);
+  margin-bottom: 0.5rem;
+}
+
+.commitment-text {
+  font-size: 0.92rem;
+  color: var(--ink-dim);
+  line-height: 1.55;
+}
+
+.plan {
+  position: relative;
+  padding: 2.5rem 2rem;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan.featured {
+  border-color: var(--brass);
+  background: linear-gradient(180deg, rgba(201, 169, 97, 0.04), transparent);
+}
+
+.plan-badge {
+  position: absolute;
+  top: -10px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--brass);
+  color: var(--bg);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.plan-name {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.plan-tag {
+  color: var(--ink-faint);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.plan-features {
+  list-style: none;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+.plan-features li {
+  display: flex;
+  gap: 0.7rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink-dim);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.plan-features li:last-child { border-bottom: none; }
+
+.plan-features li::before {
+  content: "✓";
+  color: var(--brass);
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.plan-features li.highlight {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.plan-features li.highlight::before { color: var(--whatsapp); }
+
+.plan-cta {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  background: transparent;
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.plan-cta:hover {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+
+.plan.featured .plan-cta {
+  background: var(--whatsapp);
+  border-color: var(--whatsapp);
+  color: #fff;
+}
+
+.plan.featured .plan-cta:hover {
+  background: var(--whatsapp-dark);
+  border-color: var(--whatsapp-dark);
+}
+
+.plans-note {
+  text-align: center;
+  margin-top: 2.5rem;
+  color: var(--ink-faint);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* ========== TRUST / WHY US ========== */
+.trust {
+  background: var(--bg-2);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .trust-grid { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+.trust-list {
+  list-style: none;
+}
+
+.trust-list li {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.trust-list li:last-child { border-bottom: none; }
+
+.trust-list .ico {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--brass);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1;
+  min-width: 36px;
+}
+
+.trust-list h4 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 0.35rem;
+  letter-spacing: -0.01em;
+}
+
+.trust-list p {
+  color: var(--ink-dim);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+/* ========== FAQ ========== */
+.faq-list { max-width: 800px; margin: 0 auto; }
+
+.faq-item {
+  border-bottom: 1px solid var(--line);
+  padding: 1.5rem 0;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  transition: color 0.2s ease;
+}
+
+.faq-item summary:hover { color: var(--brass); }
+
+.faq-item summary::-webkit-details-marker { display: none; }
+
+.faq-item summary::after {
+  content: "+";
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: var(--brass);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.faq-item[open] summary::after { transform: rotate(45deg); }
+
+.faq-item p {
+  margin-top: 1rem;
+  color: var(--ink-dim);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+/* ========== FINAL CTA ========== */
+.cta-final {
+  position: relative;
+  text-align: center;
+  padding: 9rem 0;
+  overflow: hidden;
+}
+
+.cta-final::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at center, rgba(201, 169, 97, 0.08), transparent 60%);
+  z-index: 0;
+}
+
+.cta-final-inner { position: relative; z-index: 1; }
+
+.cta-final h2 {
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  margin: 0 auto 1.5rem;
+  max-width: 18ch;
+}
+
+.cta-final p {
+  font-size: 1.2rem;
+  color: var(--ink-dim);
+  max-width: 50ch;
+  margin: 0 auto 3rem;
+  line-height: 1.55;
+}
+
+.cta-final .btn {
+  padding: 1.2rem 2.5rem;
+  font-size: 1.05rem;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  border-top: 1px solid var(--line);
+  padding: 3rem 0 2.5rem;
+  background: var(--bg);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-meta {
+  color: var(--ink-faint);
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: var(--ink-dim);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover { color: var(--brass); }
+
+/* ========== ENTRY ANIMATION ========== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content > * {
+  opacity: 0;
+  animation: fadeUp 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.hero-content > *:nth-child(1) { animation-delay: 0.1s; }
+.hero-content > *:nth-child(2) { animation-delay: 0.25s; }
+.hero-content > *:nth-child(3) { animation-delay: 0.4s; }
+.hero-content > *:nth-child(4) { animation-delay: 0.55s; }
+.hero-content > *:nth-child(5) { animation-delay: 0.7s; }
+
+/* Floating WhatsApp button on mobile */
+.wa-float {
+  position: fixed;
+  bottom: 1.5rem; right: 1.5rem;
+  width: 56px; height: 56px;
+  background: var(--whatsapp);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+  z-index: 40;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  animation: pulse 2s infinite;
+}
+
+.wa-float:hover { transform: scale(1.08); }
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4), 0 0 0 12px rgba(37, 211, 102, 0); }
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container nav-inner">
+    <a href="/" class="logo">Bennyz<span>’</span> Realty</a>
+    <a href="https://wa.me/916282574974?text=Hi%20Bennyz%2C%20I%27d%20like%20to%20enquire%20about%20property%20management%20for%20my%20home%20in%20Kottayam." target="_blank" class="nav-cta">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.5-.7-2.4-1.3-3.4-3-.3-.5.3-.4.7-1.5.1-.2.1-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.2 3.3 5.2 4.6 1.9.8 2.7.9 3.6.8.6 0 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.5-.3z"/><path d="M12 0a12 12 0 0 0-10 18.5L0 24l5.7-1.9A12 12 0 1 0 12 0zm0 22a10 10 0 0 1-5.1-1.4l-.4-.2-3.4 1.1 1.1-3.3-.2-.4a10 10 0 1 1 8 4.2z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <p class="eyebrow">Property Management · Kottayam, Kerala</p>
+    <h1>Your house in Kerala,<br><em>watched over</em> while you’re away.</h1>
+    <p class="hero-sub">For NRIs with an ancestral home, an investment villa, or a tharavadu that needs caring eyes. Two plans, transparent pricing from ₹3 per sq.ft. — and with Premium Maintenance, photo & video reports sent straight to your WhatsApp.</p>
+    <div class="hero-ctas">
+      <a href="https://wa.me/916282574974?text=Hi%20Bennyz%2C%20I%27d%20like%20to%20discuss%20property%20management%20for%20my%20home%20in%20Kottayam." target="_blank" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.5-.7-2.4-1.3-3.4-3-.3-.5.3-.4.7-1.5.1-.2.1-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.2 3.3 5.2 4.6 1.9.8 2.7.9 3.6.8.6 0 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.5-.3z"/><path d="M12 0a12 12 0 0 0-10 18.5L0 24l5.7-1.9A12 12 0 1 0 12 0zm0 22a10 10 0 0 1-5.1-1.4l-.4-.2-3.4 1.1 1.1-3.3-.2-.4a10 10 0 1 1 8 4.2z"/></svg>
+        Start on WhatsApp
+      </a>
+      <a href="#plans" class="btn btn-ghost">See our care plans →</a>
+    </div>
+    <div class="hero-meta">
+      <div class="hero-meta-item"><div class="num">25+</div><div class="lbl">Years in Kottayam</div></div>
+      <div class="hero-meta-item"><div class="num">29K</div><div class="lbl">Followers · @bennyz_realty</div></div>
+      <div class="hero-meta-item"><div class="num">100%</div><div class="lbl">Transparent Pricing</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- THE PROBLEM -->
+<section class="problem">
+  <div class="container problem-grid">
+    <div class="problem-text">
+      <p class="section-label">The reason this exists</p>
+      <h2>The house you grew up in <em>shouldn’t feel</em> like a stranger.</h2>
+      <p>You live in Dubai, Doha, London, New York, Toronto. The house in Kottayam is locked. Maybe a relative “checks on it.” Maybe.</p>
+      <p>Meanwhile, monsoon hits. <strong>Termites move in. Paint peels. Tiles crack. The compound becomes a jungle. Squatters notice an empty house.</strong> By the time you fly back next December — three weeks of leave spent fixing what could have been prevented.</p>
+      <p>You don’t need a vendor. You need <strong>someone you trust, on the ground, every week — sending you proof.</strong></p>
+    </div>
+    <div class="problem-card">
+      I hadn’t been back to my Kottayam house in two and a half years. When I finally went, the south wall was unrecognisable from termite damage. Repairs cost ₹3.8 lakhs. A monthly check could have caught it at ₹4,000.
+      <div class="problem-card-meta">— A reason we exist</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHATSAPP MOCKUP -->
+<section class="mockup-section">
+  <div class="container mockup-grid">
+    <div class="mockup-text">
+      <p class="section-label">Premium Maintenance · The Heart of It</p>
+      <h2>Every month. <em>Your WhatsApp. </em> Real proof.</h2>
+      <p class="lead">No app to download. No portal to log into. No mystery. Just a message — from us to you — with photos, a walk-through video, and a one-page report. The way you already talk to family.</p>
+      <p style="font-size: 0.85rem; color: var(--brass); margin-bottom: 1.5rem; letter-spacing: 0.05em;">↗ Included with the Premium Maintenance plan</p>
+      <ul class="mockup-features">
+        <li>Date-stamped photos of every room, every angle</li>
+        <li>A 60-second walk-through video shot at the property</li>
+        <li>A plain-English summary of what we did, found, and recommend</li>
+        <li>Bills, receipts, and maintenance logs attached</li>
+        <li>You can reply, ask, video-call back — instantly</li>
+      </ul>
+    </div>
+    <div class="phone">
+      <div class="phone-screen">
+        <div class="wa-header">
+          <div class="wa-avatar">B</div>
+          <div>
+            <div class="wa-name">Bennyz Realty</div>
+            <div class="wa-status">online</div>
+          </div>
+        </div>
+        <div class="wa-body">
+          <div class="wa-bubble">
+            <div class="wa-bubble-img house"></div>
+            <div class="wa-bubble-text">📍 Monthly visit — May 2026<br>All clear. Compound trimmed, gutters cleared, no leaks detected.</div>
+            <div class="wa-bubble-meta">10:42 AM</div>
+          </div>
+          <div class="wa-bubble">
+            <div class="wa-bubble-img video"></div>
+            <div class="wa-bubble-text">Walk-through video · 1:02</div>
+            <div class="wa-bubble-meta">10:43 AM</div>
+          </div>
+          <div class="wa-bubble">
+            <div class="wa-bubble-text">Report attached. EB bill paid (₹1,240). Plumber visit scheduled for the kitchen tap on Tuesday — will share before/after.</div>
+            <div class="wa-bubble-meta">10:43 AM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <p class="section-label">What we actually do</p>
+    <h2>Eight things we handle, <em>so you don’t.</em></h2>
+    <p class="section-intro">We don’t do gimmicks. This is the unglamorous, week-after-week work that keeps a Kerala home standing. All of it is included by default in our care plans.</p>
+    <div class="services-grid">
+      <div class="service-cell">
+        <div class="service-num">01 / Inspection</div>
+        <h3 class="service-title">Scheduled site visits</h3>
+        <p class="service-desc">Weekly, fortnightly, or monthly — your house is physically checked by our team. Locks, leaks, doors, walls, ceilings, electricals.</p>
+      </div>
+      <div class="service-cell">
+        <div class="service-num">02 / Reporting</div>
+        <h3 class="service-title">WhatsApp photo & video reports</h3>
+        <p class="service-desc">After every single visit. Geotagged, time-stamped, with a written summary and any flagged issues — in every plan.</p>
+      </div>
+      <div class="service-cell">
+        <div class="service-num">03 / Upkeep</div>
+        <h3 class="service-title">Cleaning, dusting, ventilation</h3>
+        <p class="service-desc">Interior cleaning, anti-fungal treatment for humid months, opening windows to air out rooms, running taps to prevent stagnation.</p>
+      </div>
+      <div class="service-cell">
+        <div class="service-num">04 / Grounds</div>
+        <h3 class="service-title">Compound & garden care</h3>
+        <p class="service-desc">Grass cutting, hedge trimming, coconut harvesting if requested, drain clearing before and after monsoon.</p>
+      </div>
+      <div class="service-cell">
+        <div class="service-num">05 / Bills</div>
+        <h3 class="service-title">Bill payments & paperwork</h3>
+        <p class="service-desc">KSEB electricity, water tax, property tax, internet, panchayat dues. Paid on time. Receipts shared. Nothing lapses.</p>
+      </div>
+      <div class="service-cell">
+        <div class="service-num">06 / Repairs</div>
+        <h3 class="service-title">Repair coordination</h3>
+        <p class="service-desc">Plumber, electrician, carpenter, painter, pest control. We get quotes, supervise the work, and send you before-and-after proof.</p>
+      </div>
+      <div class="service-cell">
+        <div class="service-num">07 / Security</div>
+        <h3 class="service-title">Security & emergency response</h3>
+        <p class="service-desc">A trusted local point of contact for the neighbours and police. We respond fast if anything happens — and you’re informed first.</p>
+      </div>
+      <div class="service-cell">
+        <div class="service-num">08 / Hospitality</div>
+        <h3 class="service-title">Pre-arrival preparation</h3>
+        <p class="service-desc">Coming back for the holidays? We deep-clean, stock the kitchen, switch on the AC, fill the tank. You walk into a home — not a project.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANS -->
+<section class="plans" id="plans">
+  <div class="container">
+    <div class="plans-header">
+      <p class="section-label">Transparent Pricing</p>
+      <h2>Two plans. <em>Real prices.</em></h2>
+      <p class="section-intro" style="margin: 0 auto;">No hidden fees. No “request a quote.” Pick the plan that fits — and know exactly what you’ll pay, today.</p>
+    </div>
+    <div class="plans-grid">
+      <div class="plan">
+        <h3 class="plan-name">Essential Care</h3>
+        <p class="plan-tag">Plan 1 · Basic Upkeep</p>
+        <div class="plan-price">
+          <span class="plan-price-rate">₹3</span><span class="plan-price-unit">per sq.ft. / month</span>
+          <div class="plan-price-min">₹6,000 monthly minimum · up to 2,000 sq.ft.</div>
+        </div>
+        <ul class="plan-features">
+          <li><strong style="color:var(--ink);">General Cleaning</strong> — sweeping, mopping, and dusting</li>
+          <li><strong style="color:var(--ink);">Electronics Vitality Check</strong> — scheduled operation of ACs, fridge, geyser</li>
+          <li><strong style="color:var(--ink);">Plumbing Health Check</strong> — flushing toilets, running taps</li>
+          <li><strong style="color:var(--ink);">Utility Management</strong> — KSEB &amp; KWA bill payment alerts</li>
+        </ul>
+        <a href="https://wa.me/916282574974?text=Hi%20Bennyz%2C%20I%27d%20like%20to%20sign%20up%20for%20the%20Essential%20Care%20plan%20%28%E2%82%B93%2Fsq.ft.%29." target="_blank" class="plan-cta">Get Essential Care →</a>
+      </div>
+      <div class="plan featured">
+        <div class="plan-badge">Recommended for NRIs</div>
+        <h3 class="plan-name">Premium Maintenance</h3>
+        <p class="plan-tag">Plan 2 · Complete Care</p>
+        <div class="plan-price">
+          <span class="plan-price-rate">₹4</span><span class="plan-price-unit">per sq.ft. / month</span>
+          <div class="plan-price-min">₹8,000 monthly minimum · up to 2,000 sq.ft.</div>
+        </div>
+        <ul class="plan-features">
+          <li class="highlight"><strong>Visual Reporting</strong> — photo &amp; video updates via WhatsApp</li>
+          <li><strong style="color:var(--ink);">Deep Cleaning Service</strong> — scrubbing bathrooms, kitchen, and windows</li>
+          <li><strong style="color:var(--ink);">Advanced Electronics Care</strong> — full check + AC filter cleaning</li>
+          <li><strong style="color:var(--ink);">Professional Pest Control</strong> — scheduled termite, ant, cockroach treatment</li>
+          <li><strong style="color:var(--ink);">Garden Upkeep</strong> — basic weeding and plant watering</li>
+        </ul>
+        <a href="https://wa.me/916282574974?text=Hi%20Bennyz%2C%20I%27d%20like%20to%20sign%20up%20for%20the%20Premium%20Maintenance%20plan%20%28%E2%82%B94%2Fsq.ft.%29." target="_blank" class="plan-cta">Get Premium Maintenance →</a>
+      </div>
+    </div>
+    <p class="plans-note">For homes above 2,000 sq.ft., the per-sq.ft. rate applies to the total area. <span style="color:var(--ink-dim);">Example: 2,500 sq.ft. on Premium = ₹10,000 / month.</span></p>
+
+    <!-- Commitment & Flexibility -->
+    <div class="commitment">
+      <div class="commitment-header">
+        <p class="section-label" style="justify-content:center;">Commitment &amp; Flexibility</p>
+        <h3>Long-term care, <em style="color:var(--brass); font-style:italic;">on your terms.</em></h3>
+      </div>
+      <div class="commitment-grid">
+        <div class="commitment-item">
+          <div class="commitment-label">Annual Plan</div>
+          <div class="commitment-text">1-year service agreement for consistent property health and a single point of accountability.</div>
+        </div>
+        <div class="commitment-item">
+          <div class="commitment-label">Quarterly Payments</div>
+          <div class="commitment-text">Divided into 4 quarters · 3 months payment in advance. Easy for NRI banking and predictable for you.</div>
+        </div>
+        <div class="commitment-item">
+          <div class="commitment-label">Easy Exit</div>
+          <div class="commitment-text">Cancel at the end of any quarter — no hidden fees, no fine print, no questions asked.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="container trust-grid">
+    <div>
+      <p class="section-label">Why Bennyz</p>
+      <h2>Twenty-five years of <em>local trust</em> — wired into 2026.</h2>
+      <p style="color: var(--ink-dim); font-size: 1.05rem; line-height: 1.65;">We’re not a property management startup that just opened an office in Kottayam. Bennyz Realty has been embedded in this district for over two decades. We know the panchayat officials, the plumbers who don’t cut corners, the electricians who actually pick up their phones. That local network is what makes a difference between a report that says “all fine” and a report that actually <em style="color: var(--brass); font-style: italic;">means</em> it.</p>
+    </div>
+    <ul class="trust-list">
+      <li>
+        <div class="ico">i.</div>
+        <div>
+          <h4>Local network, generational</h4>
+          <p>Vetted vendors across Vakathanam, Chingavanam, Puthupally, Changanassery, Manarcadu and surrounding areas. Most have worked with us for over a decade.</p>
+        </div>
+      </li>
+      <li>
+        <div class="ico">ii.</div>
+        <div>
+          <h4>One point of contact</h4>
+          <p>You speak to one person at Bennyz. They know your house, your relatives, your standing instructions. No call centre. No ticket numbers.</p>
+        </div>
+      </li>
+      <li>
+        <div class="ico">iii.</div>
+        <div>
+          <h4>Built for the diaspora</h4>
+          <p>Time-zone-aware communication. Updates timed to your evening, not ours. Payments via international cards or NRE/NRO transfers — your choice.</p>
+        </div>
+      </li>
+      <li>
+        <div class="ico">iv.</div>
+        <div>
+          <h4>Transparent. Documented. Always.</h4>
+          <p>Every rupee spent, every visit logged, every issue photographed. No “verbal updates.” If we didn’t document it, it didn’t happen.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container">
+    <p class="section-label" style="display: block; text-align: center;">FAQ</p>
+    <h2 style="text-align: center; margin: 0 auto 4rem; max-width: 22ch;">Questions <em>NRIs ask us</em> before signing up.</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>How do I know your team actually visited my house?</summary>
+        <p>Every visit produces a WhatsApp message with photos and a short video — and both carry an automatic date/time stamp from the phone’s camera. You can also request specific shots (the back wall, the well, your father’s bookshelf) at any time. We’re inspectable, not theoretical.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I pay from abroad without sending wires every month?</summary>
+        <p>Yes. We accept international cards, UPI through Indian relatives, and standard NRE/NRO transfers. Many of our NRI clients set up a quarterly or annual prepayment so they don’t have to think about it at all.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What if something urgent happens — a leak, a break-in?</summary>
+        <p>You get a WhatsApp call from us immediately, with photos. We act first and inform first — meaning we can dispatch a plumber, electrician, or coordinate with police within hours, not days. Emergency response is on-call for both Essential Care and Premium Maintenance clients.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you handle properties that are currently rented out?</summary>
+        <p>Tenant management isn’t part of our standard plans — both Essential Care and Premium Maintenance are designed for empty or owner-occupied homes. If you have a tenanted property, message us on WhatsApp and we’ll arrange a custom add-on quote.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What areas of Kottayam do you cover?</summary>
+        <p>Vakathanam, Chingavanam, Puthupally, Changanassery, Manarcadu, Thengana, Paruthumpara, Karukachal, Thottakadu, Njaliyakuzhi and all surrounding areas of Kottayam district. If your property is outside this zone, message us — we can usually arrange coverage for an adjusted fee.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What’s the minimum commitment?</summary>
+        <p>A 1-year service agreement, paid quarterly in advance (3 months at a time). You’re free to cancel at the end of any quarter — no hidden fees, no exit penalties. We’d rather earn your continued trust quarter after quarter than trap you in a long contract.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How is pricing calculated for my property?</summary>
+        <p>Pricing is per square foot, per month — flat, transparent, no surprises. Essential Care is ₹3/sq.ft. (₹6,000 minimum). Premium Maintenance is ₹4/sq.ft. (₹8,000 minimum). Both minimums apply up to 2,000 sq.ft.; above that, the per-sq.ft. rate applies to the total area. A 2,500 sq.ft. home on Premium = ₹10,000/month. That’s it.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-final">
+  <div class="container cta-final-inner">
+    <p class="section-label" style="justify-content: center;">Start in 60 seconds</p>
+    <h2>Send us a message. <em>Sleep better tonight.</em></h2>
+    <p>Tell us where your house is and what worries you. We’ll reply on WhatsApp within the hour — and have a real visit scheduled within the week.</p>
+    <a href="https://wa.me/916282574974?text=Hi%20Bennyz%2C%20I%27d%20like%20to%20discuss%20property%20management%20for%20my%20home%20in%20Kottayam.%20Here%20are%20the%20details%3A" target="_blank" class="btn btn-primary">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.5-.7-2.4-1.3-3.4-3-.3-.5.3-.4.7-1.5.1-.2.1-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.2 3.3 5.2 4.6 1.9.8 2.7.9 3.6.8.6 0 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.5-.3z"/><path d="M12 0a12 12 0 0 0-10 18.5L0 24l5.7-1.9A12 12 0 1 0 12 0zm0 22a10 10 0 0 1-5.1-1.4l-.4-.2-3.4 1.1 1.1-3.3-.2-.4a10 10 0 1 1 8 4.2z"/></svg>
+      Message us on WhatsApp
+    </a>
+    <p style="margin-top: 2rem; font-size: 0.9rem; color: var(--ink-faint);">Or call <a href="tel:+916282574974" style="color: var(--brass); text-decoration: none;">+91 6282 574 974</a> — Mon–Sat, 9 AM – 6 PM IST</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-meta">© 2026 Bennyz Realty · Kottayam, Kerala · Property Management Division</div>
+    <div class="footer-links">
+      <a href="https://www.bennyzrealty.com">Main Site</a>
+      <a href="https://www.instagram.com/bennyz_realty/" target="_blank">Instagram</a>
+      <a href="tel:+916282574974">Call</a>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WA BUTTON (mobile-style, hidden on desktop nav cta) -->
+<a href="https://wa.me/916282574974?text=Hi%20Bennyz%2C%20I%27m%20interested%20in%20property%20management." target="_blank" class="wa-float" aria-label="WhatsApp us">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.5 14.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.5-.7-2.4-1.3-3.4-3-.3-.5.3-.4.7-1.5.1-.2.1-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.2 3.3 5.2 4.6 1.9.8 2.7.9 3.6.8.6 0 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.5-.3z"/><path d="M12 0a12 12 0 0 0-10 18.5L0 24l5.7-1.9A12 12 0 1 0 12 0zm0 22a10 10 0 0 1-5.1-1.4l-.4-.2-3.4 1.1 1.1-3.3-.2-.4a10 10 0 1 1 8 4.2z"/></svg>
+</a>
+
+</body>
+</html>
